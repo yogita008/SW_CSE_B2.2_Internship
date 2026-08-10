@@ -33,7 +33,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2,120px);
             gap:12px;
-            border:  1px solid hsl(0, 77%, 19%);
+            border:  1px solid hsl(0, 90%, 19%);
             background:hsl(278, 71%, 93%);
         }
         .gap-grid{
@@ -42,7 +42,7 @@
             grid-template-rows: repeat(2,120px);
             gap:12px;
             /* column-gap: 25px; */
-            border: 1px solid hsl(0, 91%, 36%);
+            border: 1px solid hwb(0 62% 18%);
             background:hsl(279, 49%, 93%);
             /* horizontal alignment in container */
             justify-content: center; 
@@ -64,21 +64,21 @@
         }
         .header{
             grid-area: header;
-            background-color:#bee1ff;
+            background-color:hsl(310, 25%, 28%);
             color: aliceblue;
             padding: 15px;
             text-align: center;
         }
         .sidebar{
             grid-area: sidebar;
-            background-color: #d04678;
+            background-color: hsl(338, 34%, 66%);
             color: aliceblue;
             padding: 15px;
             text-align: center;
         }
         .main{
             grid-area: main;
-            background-color:hwb(308 13% 69%);
+            background-color:oklab(88.92999999999999% 0.02898 -0.01651);
             color: rgb(0, 0, 0);
             padding: 15px;
             text-align: center;
@@ -97,7 +97,7 @@
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: repeat(3,80px);
             gap: 10px;
-            background-color: hsl(54, 69%, 75%);
+            background-color: hwb(53 78% 9%);
         }
         .placement-grid .item1{
             grid-column: 1/4;
@@ -107,6 +107,34 @@
         }
         .placement-grid .item3{
             grid-column: 3 / span 2;
+        }
+         /* 5. Align-self & justify-self */
+        .self-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            background-color: hwb(316 60% 8%);
+        }
+        .self-grid .special{
+            align-self: start;
+            justify-self: end;
+            background-color: hsl(166, 28%, 85%);
+        }
+
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+            gap:15px;
+            background-color: hwb(278 73% 13%);
+        }
+        .card{
+            background-color: aliceblue;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -157,6 +185,29 @@
             <div class="box">Item 4</div>
             <div class="box item3">Item5</div>
             <div class="box">Item 6</div>
+        </div>
+    </section>
+     <section>
+        <h2>5. Align-self & justify-self </h2>
+        <div class="self-grid">
+            <div class="box">Normal</div>
+            <div class="box special">Item 2</div>
+            <div class="box">Normal3</div>
+            <div class="box">Normal4</div>
+            <div class="box">Normal5</div>
+            <div class="box">Normal6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Responsive grid</h2>
+        <div class="card-grid">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+            <div class="card">Card 6</div>
         </div>
     </section>
 </body>
