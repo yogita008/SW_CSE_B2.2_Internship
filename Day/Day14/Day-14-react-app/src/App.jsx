@@ -4,6 +4,7 @@ import FromDemo from "./components/EventHandlerTwo";
 import ActionButtonDemo from "./components/EventHandlerThree";
 import SimpleList from "./components/LitsAndKeysOne";
 import UserListHook from "./components/HookOne";
+import ThemeProviderDemo from "./components/HookTwo";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
     <ActionButtonDemo/>
     <SimpleList/>
     <UserListHook/>
+    <ThemeProviderDemo/>
    </>
   )
 }
