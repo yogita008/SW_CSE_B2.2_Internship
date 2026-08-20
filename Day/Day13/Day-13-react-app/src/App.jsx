@@ -3,12 +3,14 @@ import {Welcome} from"./components/P1";
 import { ProductCard } from "./components/P2";
 import ButtonDemo from "./components/P3";
 import Counter from "./components/StateExampleOne";
+import ToggleText from "./components/StateExampleTwo"
 import'./App.css';
 function App() {
   
 
   return (
     <>
+    <ToggleText/>
     <Counter/>
     <Welcome name="Yogita"/>
     <ProductCard
