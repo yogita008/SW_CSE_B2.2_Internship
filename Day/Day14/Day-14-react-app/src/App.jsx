@@ -8,10 +8,11 @@ import ThemeProviderDemo from "./components/HookTwo";
 import SimpleNameForm from "./components/FormOne";
 import SignupForm from "./components/FormTwo";
 import ValidatedForm from "./components/FormThree";
+import GitHubProfile from "./components/GithubApi";
 function App() {
   return (
     <>
-    <ClickDemo/>
+    {/* <ClickDemo/>
     <FromDemo/>
     <ActionButtonDemo/>
     <SimpleList/>
@@ -19,7 +20,8 @@ function App() {
     <ThemeProviderDemo/>
     <SimpleNameForm/>
     <SignupForm/>
-    <ValidatedForm/>
+    <ValidatedForm/> */}
+    <GitHubProfile username="Yogita008"/>
    </>
   )
 }
